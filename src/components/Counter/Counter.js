@@ -13,8 +13,6 @@ class Counter extends Component {
     this.setState({
       clickCount: this.state.clickCount + 1 
     })
-
-    console.log('click')
   }
 
   render() {
