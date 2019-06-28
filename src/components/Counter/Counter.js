@@ -1,19 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { addCounterValue, decrementCounterValue } from '../../actions/actions'
 import { connect } from 'react-redux'
 
-class Counter extends Component {
-
-  render() {
-    return (
-      <>
-        <h1>Counter!</h1>
-        <div>Clicked {this.props.value} times~</div>
-        <button onClick={() => this.props.increment()}>Click me!</button>
-        <button onClick={() => this.props.decrement()}>Click me too!</button>
-      </>
-    )
-  }
+const Counter = ({ increment, decrement, value }) => {
+  return (
+    <>
+      <h1>Counter!</h1>
+      <div>Clicked {value} times~</div>
+      <button onClick={increment}>Click me!</button>
+      <button onClick={decrement}>Click me too!</button>
+    </>
+  )
 }
 
 const mapDispatchToProps = dispatch => {
