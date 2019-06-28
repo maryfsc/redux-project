@@ -10,7 +10,6 @@ class Counter extends Component {
         <h1>Counter!</h1>
         <div>Clicked {this.props.value} times~</div>
         <button onClick={() => this.props.increment()}>Click me!</button>
-        <button onClick={() => this.props.decrement()}>Click me too!</button>
       </>
     )
   }
@@ -19,7 +18,6 @@ class Counter extends Component {
 const mapDispatchToProps = dispatch => {
   return {
     increment: (value) => dispatch(addCounterValue(value)),
-    decrement: (value) => dispatch(addCounterValue(value))
   }
 }
 
