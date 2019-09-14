@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
+    "babel-loader": "8.0.5",
     "babel-preset-react-app": "^9.0.0",
     "redux-devtools": "^3.5.0"
   }
