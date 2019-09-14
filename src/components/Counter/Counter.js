@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 const Counter = ({ increment, decrement, clicks }) => {
   return (
     <>
-      <h1>Counter!</h1>
+      <h1>I'm a cute counter!</h1>
       <div>Clicked {clicks} times~</div>
       <button onClick={increment}>Click me!</button>
       <button onClick={decrement}>Click me too!</button>
